@@ -1,4 +1,3 @@
-
 package com.fooddelivery.management.controller;
 
 import com.fooddelivery.management.entity.Customer;
@@ -9,7 +8,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/customers")
-@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:5174"})
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "https://food-delivery-management-three.vercel.app"
+})
 public class CustomerController {
 
     private final CustomerService customerService;
@@ -45,4 +48,3 @@ public class CustomerController {
         return "Customer deleted successfully";
     }
 }
-

@@ -1,4 +1,3 @@
-
 package com.fooddelivery.management.controller;
 
 import com.fooddelivery.management.entity.DeliveryPartner;
@@ -9,7 +8,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/delivery-partners")
-@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:5174"})
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "https://food-delivery-management-three.vercel.app"
+})
 public class DeliveryPartnerController {
 
     private final DeliveryPartnerService deliveryPartnerService;

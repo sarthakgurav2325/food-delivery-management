@@ -1,4 +1,3 @@
-
 package com.fooddelivery.management.controller;
 
 import com.fooddelivery.management.entity.Order;
@@ -10,7 +9,11 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/orders")
-@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:5174"})
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "https://food-delivery-management-three.vercel.app"
+})
 public class OrderController {
 
     private final OrderService orderService;
@@ -43,7 +46,6 @@ public class OrderController {
     public Order updateOrderStatus(
             @PathVariable Long id,
             @RequestBody Map<String, String> request) {
-
         return orderService.updateOrderStatus(id, request.get("status"));
     }
 
