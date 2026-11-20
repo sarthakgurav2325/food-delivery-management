@@ -26,5 +26,9 @@ public class DeliveryPartner {
 
     private String vehicleNumber;
 
-    private boolean available = true;
+    private Boolean available = true;
+
+    public boolean isAvailable() {
+        return Boolean.TRUE.equals(available);
+    }
 }

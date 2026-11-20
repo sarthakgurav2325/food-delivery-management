@@ -30,5 +30,9 @@ public class Food {
 
     private String imageUrl;
 
-    private boolean available = true;
+    private Boolean available = true;
+
+    public boolean isAvailable() {
+        return Boolean.TRUE.equals(available);
+    }
 }
