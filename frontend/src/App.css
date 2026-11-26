@@ -637,3 +637,713 @@ button {
     display: none;
   }
 }
+
+
+
+/* FOOD EXPRESS - MATCHED ADMIN LOGIN THEME */
+
+.auth-container {
+  background: linear-gradient(135deg, #edf4ef, #f5f7f6);
+}
+
+.auth-card {
+  border: 1px solid #e5ece7;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(23, 63, 53, 0.10);
+}
+
+.auth-logo-icon {
+  background: #f28c28;
+  border-radius: 14px;
+}
+
+.auth-logo h1 {
+  color: #173f35;
+}
+
+.auth-logo p {
+  color: #84918b;
+}
+
+.auth-heading h2 {
+  color: #173f35;
+}
+
+.auth-heading p {
+  color: #84918b;
+}
+
+.auth-field label {
+  color: #315c48;
+}
+
+.auth-field input {
+  border: 1px solid #dce6df;
+  border-radius: 8px;
+}
+
+.auth-field input:focus {
+  border-color: #f28c28;
+  box-shadow: 0 0 0 3px rgba(242, 140, 40, 0.12);
+}
+
+.password-toggle {
+  color: #426052;
+}
+
+.auth-submit {
+  background: #f28c28;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.auth-submit:hover {
+  background: #df7818;
+}
+
+.auth-switch {
+  color: #84918b;
+}
+
+.auth-switch button {
+  color: #e88a28;
+}
+
+.auth-switch button:hover {
+  color: #173f35;
+}
+
+.auth-footer {
+  color: #84918b;
+}
+
+.auth-loader {
+  border-color: #fcebd9;
+  border-top-color: #f28c28;
+}
+
+.logout-button {
+  border-color: #f4c9a2;
+  color: #c66b16;
+}
+
+.logout-button:hover {
+  background: #fff5e9;
+}
+
+
+.auth-image {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-image img {
+  width: 100%;
+  max-width: 550px;
+  height: 500px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  min-height: 100vh;
+  padding: 30px;
+  background: #f5f7f6;
+}
+
+.auth-image {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-image img {
+  width: 100%;
+  max-width: 550px;
+  height: 500px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.auth-card {
+  width: 450px;
+  max-width: 100%;
+}
+
+
+
+/* FOOD EXPRESS LOGIN PAGE */
+
+.auth-container {
+  width: 100% !important;
+  min-height: 100vh !important;
+  padding: 85px 20px 35px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  position: relative !important;
+  background: #f5f7f6 !important;
+  box-sizing: border-box !important;
+}
+
+/* LOGIN LAYOUT */
+
+.auth-container .auth-layout {
+  width: 100% !important;
+  max-width: 1000px !important;
+  min-height: 500px !important;
+  display: grid !important;
+  grid-template-columns: 48% 52% !important;
+  align-items: stretch !important;
+  background: #ffffff !important;
+  border: 1px solid #dce8e1 !important;
+  border-radius: 18px !important;
+  overflow: hidden !important;
+  box-shadow: 0 15px 40px rgba(23, 63, 53, 0.12) !important;
+}
+
+/* LEFT IMAGE */
+
+.auth-container .auth-image-section {
+  width: 100% !important;
+  min-height: 500px !important;
+  overflow: hidden !important;
+  background: #edf4ef !important;
+}
+
+.auth-container .auth-hero-image {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 500px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+/* RIGHT LOGIN CARD */
+
+.auth-container .auth-card {
+  width: 100% !important;
+  max-width: 450px !important;
+  margin: auto !important;
+  padding: 35px 42px !important;
+  background: #ffffff !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  box-sizing: border-box !important;
+}
+
+.auth-container .auth-card h1,
+.auth-container .auth-card h2 {
+  color: #173f35 !important;
+}
+
+.auth-container .auth-card label {
+  color: #315c48 !important;
+}
+
+.auth-container .auth-card input {
+  background: #fbfdfb !important;
+  border: 1px solid #d6e3db !important;
+  border-radius: 8px !important;
+}
+
+.auth-container .auth-card form > button {
+  background: #f28c28 !important;
+  color: #ffffff !important;
+  border-radius: 8px !important;
+}
+
+.auth-container .auth-card form > button:hover {
+  background: #df7616 !important;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .auth-container {
+    padding: 75px 14px 25px !important;
+  }
+
+  .auth-container .auth-layout {
+    max-width: 450px !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .auth-container .auth-image-section {
+    min-height: 220px !important;
+    height: 220px !important;
+  }
+
+  .auth-container .auth-hero-image {
+    min-height: 220px !important;
+    height: 220px !important;
+  }
+
+  .auth-container .auth-card {
+    padding: 28px 24px !important;
+  }
+}
+
+
+.auth-container .auth-layout {
+  display: grid !important;
+  grid-template-columns: 48% 52% !important;
+  width: 100% !important;
+  max-width: 1000px !important;
+  min-height: 500px !important;
+  align-items: stretch !important;
+}
+
+.auth-container .auth-image-section {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+}
+
+.auth-container .auth-card {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* FIX LOGIN FORM POSITION */
+
+.auth-container .auth-layout {
+  display: grid !important;
+  grid-template-columns: 48% 52% !important;
+  align-items: stretch !important;
+  justify-content: stretch !important;
+  gap: 0 !important;
+}
+
+/* Image stays on left */
+.auth-container .auth-image-section {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Login panel attaches to right */
+.auth-container .auth-card {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 40px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-self: stretch !important;
+  box-sizing: border-box !important;
+  border-radius: 0 !important;
+}
+
+/* Keep layout together */
+.auth-container .auth-layout > * {
+  min-width: 0 !important;
+}
+
+/* Mobile layout */
+@media (max-width: 650px) {
+  .auth-container .auth-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  .auth-container .auth-image-section {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+  }
+
+  .auth-container .auth-card {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+    padding: 28px 24px !important;
+  }
+}
+
+/* FULL HEIGHT LOGIN IMAGE */
+
+.auth-container .auth-layout {
+  min-height: 550px !important;
+  align-items: stretch !important;
+}
+
+.auth-container .auth-image-section {
+  height: 100% !important;
+  min-height: 550px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+.auth-container .auth-hero-image {
+  display: block !important;
+  width: 100% !important;
+  height: 550px !important;
+  min-height: 550px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+/* Stretch image downward only */
+.auth-container .auth-hero-image {
+  height: calc(100% + 40px) !important;
+  min-height: 590px !important;
+  object-fit: fill !important;
+  object-position: top center !important;
+}
+
+
+/* ================================
+   SERVICES SECTION
+================================ */
+
+.home-services {
+  width: 100%;
+  padding: 90px 7%;
+  background: #f5f8f6;
+}
+
+.home-section-heading {
+  max-width: 720px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.home-section-heading span {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #e58a27;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.home-section-heading h2 {
+  color: #173f35;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 15px;
+}
+
+.home-section-heading p {
+  color: #718078;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* SERVICES GRID */
+
+.services-grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+/* SERVICE CARD */
+
+.service-card {
+  position: relative;
+  min-height: 255px;
+  padding: 32px 28px;
+  background: #ffffff;
+  border: 1px solid #e4ece7;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(23, 63, 53, 0.05);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: #e58a27;
+  transition: width 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: #cbded2;
+  box-shadow: 0 18px 38px rgba(23, 63, 53, 0.12);
+}
+
+.service-card:hover::before {
+  width: 100%;
+}
+
+/* ICON */
+
+.service-icon {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  border-radius: 14px;
+  background: #eaf4ed;
+  color: #173f35;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  background: #173f35;
+  color: #ffffff;
+  transform: scale(1.06);
+}
+
+.service-icon svg {
+  width: 27px;
+  height: 27px;
+  stroke-width: 2;
+}
+
+/* TEXT */
+
+.service-card h3 {
+  color: #173f35;
+  font-size: 19px;
+  font-weight: 750;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: #718078;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 992px) {
+  .home-services {
+    padding: 75px 5%;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-services {
+    padding: 60px 20px;
+  }
+
+  .home-section-heading {
+    margin-bottom: 35px;
+  }
+
+  .home-section-heading h2 {
+    font-size: 28px;
+  }
+
+  .home-section-heading p {
+    font-size: 14px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .service-card {
+    min-height: auto;
+    padding: 27px 24px;
+  }
+}
+
+
+
+/* ================================
+   SERVICES SECTION
+================================ */
+
+.home-services {
+  width: 100%;
+  padding: 90px 7%;
+  background: #f5f8f6;
+}
+
+.home-section-heading {
+  max-width: 720px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.home-section-heading span {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #e58a27;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.home-section-heading h2 {
+  color: #173f35;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 15px;
+}
+
+.home-section-heading p {
+  color: #718078;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* SERVICES GRID */
+
+.services-grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+/* SERVICE CARD */
+
+.service-card {
+  position: relative;
+  min-height: 255px;
+  padding: 32px 28px;
+  background: #ffffff;
+  border: 1px solid #e4ece7;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(23, 63, 53, 0.05);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: #e58a27;
+  transition: width 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: #cbded2;
+  box-shadow: 0 18px 38px rgba(23, 63, 53, 0.12);
+}
+
+.service-card:hover::before {
+  width: 100%;
+}
+
+/* ICON */
+
+.service-icon {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  border-radius: 14px;
+  background: #eaf4ed;
+  color: #173f35;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  background: #173f35;
+  color: #ffffff;
+  transform: scale(1.06);
+}
+
+.service-icon svg {
+  width: 27px;
+  height: 27px;
+  stroke-width: 2;
+}
+
+/* TEXT */
+
+.service-card h3 {
+  color: #173f35;
+  font-size: 19px;
+  font-weight: 750;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: #718078;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 992px) {
+  .home-services {
+    padding: 75px 5%;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-services {
+    padding: 60px 20px;
+  }
+
+  .home-section-heading {
+    margin-bottom: 35px;
+  }
+
+  .home-section-heading h2 {
+    font-size: 28px;
+  }
+
+  .home-section-heading p {
+    font-size: 14px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .service-card {
+    min-height: auto;
+    padding: 27px 24px;
+  }
+}

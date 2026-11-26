@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from "react";
 import axios from "axios";
+import HomePage from "./HomePage";
 import {
   LayoutDashboard,
   Utensils,
@@ -20,7 +21,8 @@ import {
   CheckCircle,
   LogOut,
   Eye,
-  EyeOff
+  EyeOff,
+ 
 } from "lucide-react";
 import "./App.css";
 
@@ -87,6 +89,7 @@ const emptyAuthForm = {
 
 function App() {
   // AUTHENTICATION
+  const [currentView, setCurrentView] = useState("home");
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [checkingAuth, setCheckingAuth] = useState(true);
   const [authPage, setAuthPage] = useState("login");
@@ -620,12 +623,39 @@ function App() {
     );
   }
 
+  // PUBLIC HOME PAGE
+
+if (!isAuthenticated && currentView === "home") {
+  return (
+    <HomePage
+      onAdminLogin={() => {
+        setCurrentView("admin-login");
+        switchAuthPage("login");
+      }}
+    />
+  );
+}
+
   // LOGIN AND REGISTRATION SCREEN
 
-  if (!isAuthenticated) {
-    return (
-      <div className="auth-container">
+  
+if (!isAuthenticated) {
+  return (
+    <div className="auth-container">
+      <div className="auth-layout">
+
+        {/* LEFT IMAGE */}
+        <div className="auth-image-section">
+          <img
+            src="/images/foodexpress-admin-login.png"
+            alt="FoodExpress Admin Login"
+            className="auth-hero-image"
+          />
+        </div>
+
+        {/* RIGHT LOGIN FORM */}
         <div className="auth-card">
+
           <div className="auth-logo">
             <div className="auth-logo-icon">
               <Utensils size={30} />
@@ -648,15 +678,11 @@ function App() {
           </div>
 
           {authError && (
-            <div className="auth-error">
-              {authError}
-            </div>
+            <div className="auth-error">{authError}</div>
           )}
 
           {authSuccess && (
-            <div className="auth-success">
-              {authSuccess}
-            </div>
+            <div className="auth-success">{authSuccess}</div>
           )}
 
           <form className="auth-form" onSubmit={handleAuthSubmit}>
@@ -815,10 +841,13 @@ function App() {
           <p className="auth-footer">
             FoodExpress Admin Portal
           </p>
+
         </div>
       </div>
-    );
-  }
+    </div>
+  );
+}
+
 
   // MAIN DASHBOARD
 
